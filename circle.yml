@@ -8,4 +8,4 @@ dependencies:
 
 test:
   override:
-- docker run dataduke/sample-node npm test
+    - docker run dataduke/sample-node npm test
