@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t dataduke/sample-node .
+
+test:
+  override:
+    - docker run dataduke/sample-node npm test
