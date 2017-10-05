@@ -41,12 +41,8 @@ chown deploy /home/deploy/.ssh/authorized_keys
 
 ### Edit local files
 
-1. Edit `deploy.sh` script
-- Change to your IP address of the VM
-- Change to your Docker Hub Account
-- Change to your Docker Repo
-
-2. Inspect Dockerfile
+1. Inspect Dockerfile
+2. Fill out `deploy.sh` so that it makes sense
 
 ## Do first deployment
 
@@ -58,6 +54,5 @@ export DOCKER_PASSWORD='xyz'
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 ```
 
-2. Fill out `deploy.sh` so that it makes sense
 2. Run `deploy.sh`
-3. Open in web-browser: `ip:3000`
+3. Open in web-browser: `$ip:3000`
