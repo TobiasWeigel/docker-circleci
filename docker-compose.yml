@@ -1,12 +1,14 @@
 version: "2"
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    command: node_modules/.bin/nodemon server.js
-    volumes:
-      - .:/app
-      - /app/node_modules
-    ports:
-      - 80:3000
+    # use current dir as context
+
+      # build from Dockerfile.dev
+
+      # run node server.js as command
+
+    # mount current dir to app volume
+
+    # add /app/node_modules not mounted to host\
+
+    # map port 80 to port 3000
