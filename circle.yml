@@ -9,3 +9,7 @@ dependencies:
 test:
   override:
     - docker run dataduke/sample-node npm test
+
+# Add deployment to production from master branch
+# Login to Docker Hub
+# Use deploy script
