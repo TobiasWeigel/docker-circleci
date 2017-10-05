@@ -1,11 +1,5 @@
-machine:
-  services:
-    - docker
+# Launch docker in LXC container as service
 
-dependencies:
-  override:
-    - docker build -t dataduke/sample-node .
+# Build docker image as dependcy override
 
-test:
-  override:
-    - docker run dataduke/sample-node npm test
+# Run npm test in docker container and in test section of job
